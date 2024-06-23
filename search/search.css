@@ -1,0 +1,77 @@
+div.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Thêm lớp chứa để bố trí icon và input */
+div.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: relative; /* Cần để định vị icon */
+}
+
+/* Tùy chỉnh input để có viền sáng và icon bên trong */
+input#searchInput {
+    width: 400px; /* Chiều dài của input */
+    padding: 13px 40px 13px 15px; /* Thêm khoảng cách để icon không che chữ */
+    border: 2px solid #d3d3d3; /* Viền màu sáng */
+    border-radius: 15px;
+    outline: none;
+    font-size: 17px;
+    background-color: #000; /* Màu nền đen */
+    color: #b3b3b3; /* Màu chữ xám */
+}
+
+input#searchInput:hover {
+    box-shadow: 2px 2px 6px rgb(68, 68, 68);
+    transition: all 0.2s ease-in 0s;
+}
+
+input#searchInput::placeholder {
+    color: #b3b3b3; /* Màu chữ placeholder xám */
+}
+
+
+
+button#searchButton {
+    background-color: #cb542d; /* Màu nền nút */
+    color: #190d0d;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button#searchButton:hover {
+    font-size: 15px;
+    box-shadow: 1px 1px 8px rgb(82, 81, 81);
+    transition: all 0.2s ease-in 0s;
+}
+
+@media (min-width: 375px) and (max-width: 560px){
+    input#searchInput {
+        width: 250px; /* Chiều dài của input cho màn hình nhỏ hơn */
+    }
+}
+
+@media (max-width: 375px) {
+    input#searchInput {
+        width: 180px; /* Chiều dài của input cho màn hình rất nhỏ */
+        font-size: 14px;
+    }
+    button#searchButton:hover {
+        font-size: 11px;
+        box-shadow: 1px 1px 8px rgb(82, 81, 81);
+        transition: all 0.2s ease-in 0s;
+    }
+    button#searchButton {
+        font-size: 10px;
+        padding: 10px 12px;
+    }
+}

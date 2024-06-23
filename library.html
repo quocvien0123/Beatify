@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="library.css">
+    <link rel="icon" href="images/Beatify.png">
+    <link rel="stylesheet" href="search/search.css">
+    <script src="index.js"></script>
+    <script src="search/search.js"></script>
+    <title>Library</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <a href="home.html" onclick="showExistingContent()"> <i class="fa-solid fa-house"></i> </a>
+                    <a href="home.html" onclick="showExistingContent()" class="hide-2">Home</a>
+                </div>
+                <div class="nav-option">
+                    <a href="#searchContent" onclick="showSearchContent()"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#searchContent" onclick="showSearchContent()" class="hide-2">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option">
+                        <img src="images/library_icon.png">
+                        <a href="library.html">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus not-allowed"></i>
+                        <i class="fa-solid fa-arrow-right" onclick="showLibrary()"></i>
+                    </div>
+                </div>
+                <div class="library-categories">
+                    <button class="category-button active">Playlist</button>
+                    <button class="category-button">Nghệ sĩ</button>
+                </div>
+                <div class="playlists">
+                    <div class="playlist-item">
+                        <div class="playlist-icon" style="background-color: lightseagreen;">❤️</div>
+                        <div class="playlist-info">
+                            <span class="playlist-title">Favourites Song</span>
+                            <span class="playlist-subtitle">Playlists • 1 song</span>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="images/sontungmtp.jpg" alt="Tuyển tập của Sơn Tùng M-TP" class="playlist-img">
+                        <div class="playlist-info">
+                            <span class="playlist-title">Tuyển tập của Sơn Tùng M-TP</span>
+                            <span class="playlist-subtitle">Playlists • Beatify</span>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="images/amee.jfif" alt="Đóa Hồng Nhạc Việt" class="playlist-img">
+                        <div class="playlist-info">
+                            <span class="playlist-title">Đóa Hồng Nhạc Việt</span>
+                            <span class="playlist-subtitle">Playlists • Beatify</span>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="images/soobin.jfif" alt="Anh Hào Nhạc Việt" class="playlist-img">
+                        <div class="playlist-info">
+                            <span class="playlist-title">Anh Hào Nhạc Việt</span>
+                            <span class="playlist-subtitle">Playlists • Beatify</span>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="images/coffe.jfif" alt="Cà Phê Quán Quen" class="playlist-img">
+                        <div class="playlist-info">
+                            <span class="playlist-title">Cà Phê Quán Quen</span>
+                            <span class="playlist-subtitle">Playlists • Beatify</span>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="images/trucnhan.jpg" alt="Trúc Nhân" class="playlist-img">
+                        <div class="playlist-info">
+                            <span class="playlist-title">Trúc Nhân</span>
+                            <span class="playlist-subtitle">Artist</span>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="images/sontungmtp.jpg" alt="Sơn Tùng MTP" class="playlist-img">
+                        <div class="playlist-info">
+                            <span class="playlist-title">Sơn Tùng MTP</span>
+                            <span class="playlist-subtitle">Artist</span>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="images/soobin.jfif" alt="Soobin Hoàng Sơn" class="playlist-img">
+                        <div class="playlist-info">
+                            <span class="playlist-title">Soobin Hoàng Sơn</span>
+                            <span class="playlist-subtitle">Artist</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </aside>
+
+        <main>
+            <header>
+                <div class="nav-links">
+                    <img src="images/backward_icon.png">
+                    <img src="images/forward_icon.png" class="hide">
+                </div>
+
+            </header>
+
+            <div class="trending">
+                <div class="left">
+                    <h5>Library Song</h5>
+                    <div class="info">
+                        <h2>Lost Emotions</h2>
+                        <h4>Rion Clarke</h4>
+                        <h5>63 Million Plays</h5>
+                        <div class="buttons">
+                            <button>Listen Now</button>
+                            <i class='bx bxs-heart'></i>
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/R2.jpg">
+            </div>
+
+            <div class="playlist">
+                <div class="genres">
+                    <div class="header">
+                        <h5>Genres</h5>
+                        <a href="#">See all</a>
+                    </div>
+
+                    <div class="items">
+                        <div class="item">
+                            <p>Electro<br>Pop</p>
+                        </div>
+                        <div class="item">
+                            <p>Dance<br>Beeat</p>
+                        </div>
+                        <div class="item">
+                            <p>Clubhouse<br>Remix</p>
+                        </div>
+                        <div class="item">
+                            <p>Hip Hop<br>Rap</p>
+                        </div>
+                        <div class="item">
+                            <p>Alternative<br>Indie</p>
+                        </div>
+                        <div class="item">
+                            <p>Classical<br>Period</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="music-list">
+                    <div class="header">
+                        <h5>Top Songs</h5>
+                        <a href="#">See all</a>
+                    </div>
+
+                    <div class="items">
+                        <div class="item">
+                            <div class="info">
+                                <p>01</p>
+                                <img src="./images/khongthesay.jpg">
+                                <div class="details">
+                                    <h5>Không thể say</h5>
+                                    <p>HieuThuHai</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>03:45</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <p>02</p>
+                                <img src="./images/sontung.jpg">
+                                <div class="details">
+                                    <h5>Chạy Ngay Đi</h5>
+                                    <p>Sơn Tùng MTP</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>04:35</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <p>03</p>
+                                <img src="./images/nhat.jpg">
+                                <div class="details">
+                                    <h5>Nhạt</h5>
+                                    <p>Phan Mạnh Quỳnh</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>04:22</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <p>04</p>
+                                <img src="./images/exit_sign.jpq.jpg">
+                                <div class="details">
+                                    <h5>Vẫn Đợi</h5>
+                                    <p> wxrdie</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>03:17</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </main>
+
+        <div class="right-section">
+
+            <div class="profile">
+                <button class="badge nav-item hide">Explore Premium</button>
+                <a href="Login.html">
+                <button class="badge nav-item hide">Login</button>
+            </a>
+            </div>
+
+            <div class="music-player">
+                <div class="top-section">
+                    <div class="header">
+                        <h5>Player</h5>
+                        <i class='bx bxs-playlist'></i>
+                    </div>
+                    <div class="song-info">
+                        <img src="./images/nolovenolife.jpg">
+                        <div class="description">
+                            <h3>No love no life</h3>
+                            <h5>HieuThuHai</h5>
+                            <p>Best of 2024</p>
+                        </div>
+                        <div class="progress">
+                            <p>02:45</p>
+                            <div class="active-line"></div>
+                            <div class="deactive-line"></div>
+                            <p>01:02</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player-actions">
+                    <div class="buttons">
+                        <i class='bx bx-repeat'></i>
+                        <i class='bx bx-first-page'></i>
+                        <i class='bx bxs-right-arrow play-button'></i>
+                        <i class='bx bx-last-page'></i>
+                        <i class='bx bx-transfer-alt'></i>
+                    </div>
+                    <div class="lyrics">
+                        <i class='bx bx-chevron-up'></i>
+                        <h5>LYRICS</h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
